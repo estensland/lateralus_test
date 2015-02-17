@@ -3,12 +3,14 @@ define([
   'lateralus'
 
   ,'lat_test.component.container'
+  ,'lat_test.component.box'
 
 ], function (
 
   Lateralus
 
   ,ContainerComponent
+  ,BoxComponent
 
 ) {
   'use strict';

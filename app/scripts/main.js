@@ -27,6 +27,9 @@ require.config({
   }, {
     name: 'lat_test.component.container'
     ,location: 'scripts/components/container'
+  }, {
+    name: 'lat_test.component.box'
+    ,location: 'scripts/components/box'
   }]
 });
 

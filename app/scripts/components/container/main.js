@@ -1,6 +1,7 @@
 define([
 
   'lateralus'
+  ,'lat_test.component.box'
 
   ,'./model'
   ,'./view'
@@ -9,7 +10,7 @@ define([
 ], function (
 
   Lateralus
-
+  ,BoxComponent
   ,Model
   ,View
   ,template
@@ -24,6 +25,11 @@ define([
     ,Model: Model
     ,View: View
     ,template: template
+    ,initialize: function(){
+      this.boxComponent = this.addComponent(BoxComponent, {
+        el: this.view.$box
+      })
+    }
   });
 
   return ContainerComponent;

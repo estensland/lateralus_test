@@ -2,15 +2,11 @@ define([
 
   'lateralus'
   ,'lat_test.component.box'
-  ,'./view'
-  ,'text!./template.mustache'
 
 ], function (
 
   Lateralus
   ,BoxComponent
-  ,View
-  ,template
 
 ) {
   'use strict';
@@ -18,7 +14,7 @@ define([
   var Base = Lateralus.Component.Model;
   var baseProto = Base.prototype;
 
-  var ContainerComponentModel = Base.extend({
+  var BoxComponentModel = Base.extend({
     /**
      * Parameters are the same as http://backbonejs.org/#Model-constructor
      * @param {Object} [attributes]
@@ -29,5 +25,5 @@ define([
     }
   });
 
-  return ContainerComponentModel;
+  return BoxComponentModel;
 });
